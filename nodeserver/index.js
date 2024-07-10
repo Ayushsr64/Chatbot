@@ -5,7 +5,7 @@ const users={};
 
 io.on('connection',socket =>{
     socket.on('new-user-joined',name=>{
-        condole.log("New user",name);
+        condole.log("New user ayush srivastav",name);
 
         users[socket.id]=name;
         socket.broadcast.emit('user-joined',name);
